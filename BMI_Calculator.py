@@ -13,6 +13,13 @@ def calculate_BMI(weight,height):
     BMI = weight / (height**2)
     return BMI
 
+#BMI Range
+st.subheader('Range of BMI')
+
+st.markdown('Underweight -- Less than 18.5')
+st.markdown('Normal Weight -- 18.5 to 24.9')
+st.markdown('Over Weight -- 25 to 29.9')
+st.markdown('Obese -- Greater than 29.9')
 
 #Input 
 height = st.number_input('Enter your height(in cm):',min_value=50,max_value=300)
@@ -32,6 +39,8 @@ if st.button('Calculate BMI'):
             st.markdown("You are Overweight")
         else:
             st.markdown("You are Obese")
+
+    st.write('Your BMI :',round(BMI,2))
 
 #Purpose of BMI
 st.header('Purpose of BMI')
