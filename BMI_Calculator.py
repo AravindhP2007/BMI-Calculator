@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title='BMI Calculator')
+
 st.header('BMI (Body Mass Calculator) Calculator')
 st.markdown("""
     **Welcome to the BMI Calculator!**  
